@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    _PROJECT_NAME: "ReservationStatus"
+    _PROJECT_NAME: "reservationstatus"
 
 phases:
   install:

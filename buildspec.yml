@@ -84,12 +84,12 @@ phases:
                             key: url  
                       - name: username
                         valueFrom:
-                          configMapKeyRef:
+                          secretKeyRef:
                             name: parking
                             key: username          
                       - name: password
                         valueFrom:
-                          configMapKeyRef:
+                          secretKeyRef:
                             name: parking
                             key: password                                     
                     readinessProbe:

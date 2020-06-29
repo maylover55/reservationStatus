@@ -77,6 +77,11 @@ phases:
                     ports:
                       - containerPort: 8080
                     env:
+                      - name: url
+                        valueFrom:
+                          configMapKeyRef:
+                            name: parking
+                            key: url  
                       - name: username
                         valueFrom:
                           configMapKeyRef:

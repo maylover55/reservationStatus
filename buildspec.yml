@@ -81,10 +81,10 @@ phases:
                         valueFrom:
                           secretKeyRef:
                             name: parking
-                            key: username           
+                            key: username          
                       - name: password
                         valueFrom:
-                          secretKeyRef:
+                          configMapKeyRef:
                             name: parking
                             key: password                                     
                     readinessProbe:

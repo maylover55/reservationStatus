@@ -79,7 +79,7 @@ phases:
                     env:
                       - name: username
                         valueFrom:
-                          secretKeyRef:
+                          configMapKeyRef:
                             name: parking
                             key: username          
                       - name: password

@@ -81,7 +81,17 @@ phases:
                         valueFrom:
                           configMapKeyRef:
                             name: parking
-                            key: url                    
+                            key: url
+                      - name: username
+                        valueFrom:
+                          secretKeyRef:
+                            name: parking
+                            key: username           
+                      - name: password
+                        valueFrom:
+                          secretKeyRef:
+                            name: parking
+                            key: password                                     
                     readinessProbe:
                       httpGet:
                         path: /actuator/health

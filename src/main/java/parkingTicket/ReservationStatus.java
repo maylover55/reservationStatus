@@ -69,4 +69,17 @@ public class ReservationStatus {
             this.ticketDeliveryId = ticketDeliveryId;
         }
 
+        @Override
+        public String toString() {
+            return "ReservationStatus{" +
+                    "id=" + id +
+                    ", ticketReservationId=" + ticketReservationId +
+                    ", memberId=" + memberId +
+                    ", reservationDate=" + reservationDate +
+                    ", status='" + status + '\'' +
+                    ", parkingLotId=" + parkingLotId +
+                    ", ticketDeliveryId=" + ticketDeliveryId +
+                    '}';
+        }        
+
 }
